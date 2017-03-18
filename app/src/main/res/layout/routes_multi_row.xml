@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/routes_multi_row_linear_layout_source_destination">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Mulund Colony"
+            android:maxLines="1"
+            android:id="@+id/routes_multi_row_linear_layout_source_destination_source_text"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:textColor="#454545"
+            android:gravity="left"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="to"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nahur Railway Station West"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/routes_multi_row_linear_layout_source_destination_dest_text"
+            android:textColor="#454545"
+            android:layout_weight="1"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="405"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:layout_below="@id/routes_multi_row_linear_layout_source_destination"
+        android:background="@drawable/route_bus_number_textview"
+        android:id="@+id/routes_multi_row_textView_starting_bus" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="405"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:background="@drawable/route_bus_number_textview"
+        android:id="@+id/routes_multi_row_textView_ending_bus"
+        android:layout_below="@+id/routes_multi_row_linear_layout_source_destination"
+        android:layout_toRightOf="@+id/routes_multi_row_textView_starting_bus"
+        android:layout_toEndOf="@+id/routes_multi_row_textView_starting_bus"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Change At: "
+        android:id="@+id/routes_multi_row_textView_change_at_support"
+        android:layout_below="@+id/routes_multi_row_textView_starting_bus"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:textColor="#454545"
+        android:id="@+id/routes_multi_row_textView_change_at"
+        android:layout_alignTop="@+id/routes_multi_row_textView_change_at_support"
+        android:layout_toRightOf="@+id/routes_multi_row_textView_change_at_support"
+        android:layout_toEndOf="@+id/routes_multi_row_textView_change_at_support" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/route_stops_textview"
+        android:layout_below="@+id/routes_multi_row_linear_layout_source_destination"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="5"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:id="@+id/routes_multi_row_linear_layout_stops" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:layout_gravity="center"
+            android:text="stops"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:id="@+id/textView2" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
